@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>868</width>
+    <height>753</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>GNAO Optical Bench</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="caLabel" name="calabel">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>20</y>
+      <width>731</width>
+      <height>641</height>
+     </rect>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../../../../usr/local/epics/caqtdm/caQtDM_QtControls/qtcontrols.qrc">:/pixmaps/guiMOCKUP.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="caLineEdit" name="calineedit">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>650</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string>GNAO:CALIB:LGS:FOCUS.RBV</string>
+    </property>
+    <property name="frameLineWidth" stdset="0">
+     <number>0</number>
+    </property>
+    <property name="precision">
+     <number>2</number>
+    </property>
+    <property name="precisionMode">
+     <enum>caLineEdit::User</enum>
+    </property>
+   </widget>
+   <widget class="caLineEdit" name="calineedit_2">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>650</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">GNAO:CALIB:LGS:FOCUS.EGU</string>
+    </property>
+    <property name="frameLineWidth" stdset="0">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="caRelatedDisplay" name="carelateddisplay">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>610</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="label">
+     <string notr="true">LGS SFS</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>255</red>
+      <green>190</green>
+      <blue>111</blue>
+     </color>
+    </property>
+    <property name="labels">
+     <string>LGS SFS</string>
+    </property>
+    <property name="files">
+     <string>motorx_all</string>
+    </property>
+    <property name="args">
+     <string>P=GNAO:,M=CALIB:LGS:FOCUS</string>
+    </property>
+    <property name="removeParent" stdset="0">
+     <string>false</string>
+    </property>
+   </widget>
+   <widget class="caRelatedDisplay" name="carelateddisplay_2">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>460</y>
+      <width>91</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="label">
+     <string notr="true">LGS WFS</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>255</red>
+      <green>190</green>
+      <blue>111</blue>
+     </color>
+    </property>
+    <property name="labels">
+     <string>LGS WFS</string>
+    </property>
+    <property name="files">
+     <string>ADBase</string>
+    </property>
+    <property name="args">
+     <string>P=GNAO:NGS:SLOW_WFS:,R=CAM:</string>
+    </property>
+    <property name="removeParent" stdset="0">
+     <string>false</string>
+    </property>
+   </widget>
+   <widget class="caLineEdit" name="calineedit_3">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>530</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string>GNAO:NGS:SLOW_WFS:CAM:AcquireBusy</string>
+    </property>
+    <property name="frameLineWidth" stdset="0">
+     <number>0</number>
+    </property>
+    <property name="precision">
+     <number>2</number>
+    </property>
+    <property name="precisionMode">
+     <enum>caLineEdit::User</enum>
+    </property>
+   </widget>
+   <widget class="caCamera" name="cacamera">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>480</y>
+      <width>191</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="channelData" stdset="0">
+     <string notr="true">GNAO:NGS:SLOW_WFS:image1:ArrayData</string>
+    </property>
+    <property name="channelWidth" stdset="0">
+     <string notr="true">GNAO:NGS:SLOW_WFS:CAM:ArraySizeX_RBV</string>
+    </property>
+    <property name="channelHeight" stdset="0">
+     <string notr="true">GNAO:NGS:SLOW_WFS:CAM:ArraySizeY_RBV</string>
+    </property>
+    <property name="simpleZoomedView" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="Zoom" stdset="0">
+     <enum>caCamera::Yes</enum>
+    </property>
+   </widget>
+   <widget class="caRelatedDisplay" name="carelateddisplay_3">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>460</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="label">
+     <string notr="true">open display</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>153</red>
+      <green>193</green>
+      <blue>241</blue>
+     </color>
+    </property>
+    <property name="labels">
+     <string>open display</string>
+    </property>
+    <property name="files">
+     <string>cameraDisplay</string>
+    </property>
+    <property name="args">
+     <string/>
+    </property>
+    <property name="removeParent" stdset="0">
+     <string>false</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>868</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>caRelatedDisplay</class>
+   <extends>QWidget</extends>
+   <header>caRelatedDisplay</header>
+  </customwidget>
+  <customwidget>
+   <class>caLabel</class>
+   <extends>QLabel</extends>
+   <header>caLabel</header>
+  </customwidget>
+  <customwidget>
+   <class>caLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>caLineEdit</header>
+  </customwidget>
+  <customwidget>
+   <class>caCamera</class>
+   <extends>QWidget</extends>
+   <header>caCamera</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../../../../usr/local/epics/caqtdm/caQtDM_QtControls/qtcontrols.qrc"/>
+ </resources>
+ <connections/>
+</ui>

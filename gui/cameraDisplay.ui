@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>503</width>
+    <height>561</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="caCamera" name="cacamera">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>511</width>
+      <height>451</height>
+     </rect>
+    </property>
+    <property name="channelData" stdset="0">
+     <string notr="true">GNAO:NGS:SLOW_WFS:image1:ArrayData</string>
+    </property>
+    <property name="channelWidth" stdset="0">
+     <string notr="true">GNAO:NGS:SLOW_WFS:CAM:ArraySizeX_RBV</string>
+    </property>
+    <property name="channelHeight" stdset="0">
+     <string notr="true">GNAO:NGS:SLOW_WFS:CAM:ArraySizeY_RBV</string>
+    </property>
+   </widget>
+   <widget class="caRelatedDisplay" name="carelateddisplay_2">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>470</y>
+      <width>271</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="label">
+     <string notr="true">LGS WFS Enigineering Panel</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>255</red>
+      <green>190</green>
+      <blue>111</blue>
+     </color>
+    </property>
+    <property name="labels">
+     <string>LGS WFS Engineering Panel</string>
+    </property>
+    <property name="files">
+     <string>ADBase</string>
+    </property>
+    <property name="args">
+     <string>P=GNAO:NGS:SLOW_WFS:,R=CAM:</string>
+    </property>
+    <property name="removeParent" stdset="0">
+     <string>false</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>503</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>caRelatedDisplay</class>
+   <extends>QWidget</extends>
+   <header>caRelatedDisplay</header>
+  </customwidget>
+  <customwidget>
+   <class>caCamera</class>
+   <extends>QWidget</extends>
+   <header>caCamera</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,5 @@
+#!/usr/bin/bash
+export CAQTDM_DISPLAY_PATH="/usr/local/epics/synApps/support/synApps/support/areaDetector-R3-12-1/ADCore/ADApp/op/ui:/usr/local/epics/synApps/support/synApps/support/areaDetector-R3-12-1/ADCore/ADApp/op/ui/autoconvert::/usr/local/epics/synApps/support/motor-R7-1/motorApp/op/ui/:/usr/local/epics/synApps/support/motor-R7-1/motorApp/op/ui/autoconvert"
+
+caQtDM -url . -macro "" ./main.ui 
+
