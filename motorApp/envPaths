@@ -1,0 +1,2 @@
+epicsEnvSet("IOC", "iocMotor")
+epicsEnvSet("MOTOR", "/usr/local/epics/synApps/support/synApps/support/motor-R7-2-2")

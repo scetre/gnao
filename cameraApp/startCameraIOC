@@ -1,0 +1,3 @@
+#!/usr/bin/bash
+./ADAravisApp st.fake.cmd
+

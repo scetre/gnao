@@ -1,0 +1,5 @@
+#!/usr/bin/bash
+export CAQTDM_DISPLAY_PATH="/usr/local/epics/synApps/support/synApps/support/areaDetector-R3-12-1/ADCore/ADApp/op/ui:/usr/local/epics/synApps/support/synApps/support/areaDetector-R3-12-1/ADCore/ADApp/op/ui/autoconvert"
+
+caQtDM -macro "P=GNAO:NGS:SLOW_WFS:,R=CAM:" ADBase.ui 
+
