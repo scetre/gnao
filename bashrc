@@ -43,6 +43,6 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-export EPICS_CA_ADDR_LIST="localhost:5064 localhost:5065"
+export EPICS_CA_ADDR_LIST="localhost:5064 localhost:5065 localhost:5066"
 export EPICS_CA_AUTO_ADDR_LIST=NO
 export QT_PLUGIN_PATH=/usr/local/epics/caqtdm/caQtDM_Binaries/
