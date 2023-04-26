@@ -7,7 +7,7 @@ import time
 import matplotlib.pyplot as plt
 
 if __name__ == '__main__':
-    imCa = PV('GNAO:NGS:SLOW_WFS:image1:ArrayData')
+    imCa = PV('GNAO:LGS:WFS:image1:ArrayData')
     im = np.array(imCa.get())
     # assume square image
     imageSizeX = int(np.sqrt(im.shape[0]))

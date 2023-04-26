@@ -3,7 +3,7 @@ import time
 import sys
 import matplotlib.pyplot as plt
 
-cameraIm = epics.PV("GNAO:NGS:SLOW_WFS:image1:ArrayData")
+cameraIm = epics.PV("GNAO:LGS:WFS:image1:ArrayData")
 dmCmd = epics.PV("GNAO:DM:cmd")
 
 nAct = dmCmd.get().shape[0]

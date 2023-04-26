@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>868</width>
-    <height>753</height>
+    <width>1000</width>
+    <height>761</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,8 +20,8 @@
    <widget class="caLabel" name="calabel">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>20</y>
+      <x>200</x>
+      <y>10</y>
       <width>731</width>
       <height>641</height>
      </rect>
@@ -36,8 +36,8 @@
    <widget class="caLineEdit" name="calineedit">
     <property name="geometry">
      <rect>
-      <x>570</x>
-      <y>650</y>
+      <x>700</x>
+      <y>640</y>
       <width>61</width>
       <height>31</height>
      </rect>
@@ -58,8 +58,8 @@
    <widget class="caLineEdit" name="calineedit_2">
     <property name="geometry">
      <rect>
-      <x>630</x>
-      <y>650</y>
+      <x>760</x>
+      <y>640</y>
       <width>31</width>
       <height>31</height>
      </rect>
@@ -74,8 +74,8 @@
    <widget class="caRelatedDisplay" name="carelateddisplay">
     <property name="geometry">
      <rect>
-      <x>660</x>
-      <y>610</y>
+      <x>820</x>
+      <y>600</y>
       <width>121</width>
       <height>41</height>
      </rect>
@@ -86,8 +86,8 @@
     <property name="background">
      <color>
       <red>255</red>
-      <green>190</green>
-      <blue>111</blue>
+      <green>121</green>
+      <blue>3</blue>
      </color>
     </property>
     <property name="labels">
@@ -106,10 +106,10 @@
    <widget class="caRelatedDisplay" name="carelateddisplay_2">
     <property name="geometry">
      <rect>
-      <x>740</x>
-      <y>460</y>
+      <x>900</x>
+      <y>439</y>
       <width>91</width>
-      <height>20</height>
+      <height>31</height>
      </rect>
     </property>
     <property name="label">
@@ -118,8 +118,8 @@
     <property name="background">
      <color>
       <red>255</red>
-      <green>190</green>
-      <blue>111</blue>
+      <green>121</green>
+      <blue>3</blue>
      </color>
     </property>
     <property name="labels">
@@ -129,7 +129,7 @@
      <string>ADBase</string>
     </property>
     <property name="args">
-     <string>P=GNAO:NGS:SLOW_WFS:,R=CAM:</string>
+     <string>P=GNAO:LGS:WFS:,R=CAM:</string>
     </property>
     <property name="removeParent" stdset="0">
      <string>false</string>
@@ -138,14 +138,14 @@
    <widget class="caLineEdit" name="calineedit_3">
     <property name="geometry">
      <rect>
-      <x>560</x>
-      <y>530</y>
+      <x>720</x>
+      <y>520</y>
       <width>81</width>
       <height>16</height>
      </rect>
     </property>
     <property name="channel" stdset="0">
-     <string>GNAO:NGS:SLOW_WFS:CAM:AcquireBusy</string>
+     <string>GNAO:LGS:WFS:CAM:AcquireBusy</string>
     </property>
     <property name="frameLineWidth" stdset="0">
      <number>0</number>
@@ -160,20 +160,20 @@
    <widget class="caCamera" name="cacamera">
     <property name="geometry">
      <rect>
-      <x>660</x>
-      <y>480</y>
+      <x>820</x>
+      <y>470</y>
       <width>191</width>
       <height>131</height>
      </rect>
     </property>
     <property name="channelData" stdset="0">
-     <string notr="true">GNAO:NGS:SLOW_WFS:image1:ArrayData</string>
+     <string notr="true">GNAO:LGS:WFS:image1:ArrayData</string>
     </property>
     <property name="channelWidth" stdset="0">
-     <string notr="true">GNAO:NGS:SLOW_WFS:CAM:ArraySizeX_RBV</string>
+     <string notr="true">GNAO:LGS:WFS:CAM:ArraySizeX_RBV</string>
     </property>
     <property name="channelHeight" stdset="0">
-     <string notr="true">GNAO:NGS:SLOW_WFS:CAM:ArraySizeY_RBV</string>
+     <string notr="true">GNAO:LGS:WFS:CAM:ArraySizeY_RBV</string>
     </property>
     <property name="simpleZoomedView" stdset="0">
      <bool>false</bool>
@@ -185,14 +185,20 @@
    <widget class="caRelatedDisplay" name="carelateddisplay_3">
     <property name="geometry">
      <rect>
-      <x>660</x>
-      <y>460</y>
+      <x>820</x>
+      <y>439</y>
       <width>81</width>
-      <height>20</height>
+      <height>31</height>
      </rect>
     </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
     <property name="label">
-     <string notr="true">open display</string>
+     <string notr="true">View</string>
     </property>
     <property name="background">
      <color>
@@ -202,7 +208,7 @@
      </color>
     </property>
     <property name="labels">
-     <string>open display</string>
+     <string>View</string>
     </property>
     <property name="files">
      <string>cameraDisplay</string>
@@ -214,14 +220,745 @@
      <string>false</string>
     </property>
    </widget>
+   <widget class="caRelatedDisplay" name="carelateddisplay_4">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>610</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="label">
+     <string notr="true">NIR PSF</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>255</red>
+      <green>121</green>
+      <blue>3</blue>
+     </color>
+    </property>
+    <property name="labels">
+     <string>NIR PSF</string>
+    </property>
+    <property name="files">
+     <string>motorx_all</string>
+    </property>
+    <property name="args">
+     <string>P=GNAO:,M=CALIB:LGS:FOCUS</string>
+    </property>
+    <property name="removeParent" stdset="0">
+     <string>false</string>
+    </property>
+   </widget>
+   <widget class="caRelatedDisplay" name="carelateddisplay_5">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>450</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="label">
+     <string notr="true">NGS WFS</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>255</red>
+      <green>121</green>
+      <blue>3</blue>
+     </color>
+    </property>
+    <property name="labels">
+     <string>NGS WFS</string>
+    </property>
+    <property name="files">
+     <string>motorx_all</string>
+    </property>
+    <property name="args">
+     <string>P=GNAO:,M=CALIB:LGS:FOCUS</string>
+    </property>
+    <property name="removeParent" stdset="0">
+     <string>false</string>
+    </property>
+   </widget>
+   <widget class="caRelatedDisplay" name="carelateddisplay_6">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>130</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="label">
+     <string notr="true">NGS SFS</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>255</red>
+      <green>121</green>
+      <blue>3</blue>
+     </color>
+    </property>
+    <property name="labels">
+     <string>NGS SFS</string>
+    </property>
+    <property name="files">
+     <string>motorx_all</string>
+    </property>
+    <property name="args">
+     <string>P=GNAO:,M=CALIB:LGS:FOCUS</string>
+    </property>
+    <property name="removeParent" stdset="0">
+     <string>false</string>
+    </property>
+   </widget>
+   <widget class="caRelatedDisplay" name="carelateddisplay_7">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>10</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="label">
+     <string notr="true">OPEN</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>255</red>
+      <green>121</green>
+      <blue>3</blue>
+     </color>
+    </property>
+    <property name="labels">
+     <string>OPEN</string>
+    </property>
+    <property name="files">
+     <string>motorx_all</string>
+    </property>
+    <property name="args">
+     <string>P=GNAO:,M=CALIB:LGS:FOCUS</string>
+    </property>
+    <property name="removeParent" stdset="0">
+     <string>false</string>
+    </property>
+   </widget>
+   <widget class="caRelatedDisplay" name="carelateddisplay_9">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>700</y>
+      <width>151</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="label">
+     <string notr="true">LGS SFS</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>170</red>
+      <green>144</green>
+      <blue>92</blue>
+     </color>
+    </property>
+    <property name="labels">
+     <string>System Status</string>
+    </property>
+    <property name="files">
+     <string>motorx_all</string>
+    </property>
+    <property name="args">
+     <string>P=GNAO:,M=CALIB:LGS:FOCUS</string>
+    </property>
+    <property name="removeParent" stdset="0">
+     <string>false</string>
+    </property>
+   </widget>
+   <widget class="caFrame" name="caframe">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>689</y>
+      <width>991</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="background">
+     <color>
+      <red>206</red>
+      <green>206</green>
+      <blue>211</blue>
+     </color>
+    </property>
+    <property name="backgroundMode">
+     <enum>caFrame::Filled</enum>
+    </property>
+    <widget class="caFrame" name="caframe_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>341</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="midLineWidth">
+      <number>1</number>
+     </property>
+     <property name="background">
+      <color>
+       <red>206</red>
+       <green>206</green>
+       <blue>211</blue>
+      </color>
+     </property>
+     <property name="backgroundMode">
+      <enum>caFrame::Filled</enum>
+     </property>
+     <widget class="caRelatedDisplay" name="carelateddisplay_11">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>10</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="label">
+       <string notr="true">LGS SFS</string>
+      </property>
+      <property name="background">
+       <color>
+        <red>170</red>
+        <green>144</green>
+        <blue>92</blue>
+       </color>
+      </property>
+      <property name="labels">
+       <string>Clear</string>
+      </property>
+      <property name="files">
+       <string>motorx_all</string>
+      </property>
+      <property name="args">
+       <string>P=GNAO:,M=CALIB:LGS:FOCUS</string>
+      </property>
+      <property name="removeParent" stdset="0">
+       <string>false</string>
+      </property>
+     </widget>
+     <widget class="caFrame" name="caframe_3">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>10</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="background">
+       <color>
+        <red>150</red>
+        <green>150</green>
+        <blue>154</blue>
+       </color>
+      </property>
+      <property name="backgroundMode">
+       <enum>caFrame::Filled</enum>
+      </property>
+     </widget>
+     <widget class="caLabel" name="calabel_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>20</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Error</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="caRelatedDisplay" name="carelateddisplay_10">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>10</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="label">
+      <string notr="true">LGS SFS</string>
+     </property>
+     <property name="background">
+      <color>
+       <red>170</red>
+       <green>144</green>
+       <blue>92</blue>
+      </color>
+     </property>
+     <property name="labels">
+      <string>Command Interface</string>
+     </property>
+     <property name="files">
+      <string>motorx_all</string>
+     </property>
+     <property name="args">
+      <string>P=GNAO:,M=CALIB:LGS:FOCUS</string>
+     </property>
+     <property name="removeParent" stdset="0">
+      <string>false</string>
+     </property>
+    </widget>
+    <widget class="caRelatedDisplay" name="carelateddisplay_8">
+     <property name="geometry">
+      <rect>
+       <x>760</x>
+       <y>10</y>
+       <width>211</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="label">
+      <string notr="true">LGS SFS</string>
+     </property>
+     <property name="background">
+      <color>
+       <red>170</red>
+       <green>144</green>
+       <blue>92</blue>
+      </color>
+     </property>
+     <property name="labels">
+      <string>Simulation Interface</string>
+     </property>
+     <property name="files">
+      <string>motorx_all</string>
+     </property>
+     <property name="args">
+      <string>P=GNAO:,M=CALIB:LGS:FOCUS</string>
+     </property>
+     <property name="removeParent" stdset="0">
+      <string>false</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="caFrame" name="caframe_4">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>161</width>
+      <height>351</height>
+     </rect>
+    </property>
+    <property name="background">
+     <color>
+      <red>206</red>
+      <green>206</green>
+      <blue>211</blue>
+     </color>
+    </property>
+    <property name="backgroundMode">
+     <enum>caFrame::Filled</enum>
+    </property>
+    <widget class="caLabel" name="calabel_4">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>161</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>  System State </string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::PlainText</enum>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="caLabel" name="calabel_5">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>40</y>
+       <width>161</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>RUNNING</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::PlainText</enum>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>false</bool>
+     </property>
+     <property name="foreground">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+     <property name="background">
+      <color alpha="1">
+       <red>150</red>
+       <green>150</green>
+       <blue>154</blue>
+      </color>
+     </property>
+     <property name="borderWidth">
+      <number>0</number>
+     </property>
+     <property name="colorMode">
+      <enum>caLabel::Static</enum>
+     </property>
+    </widget>
+    <widget class="caLabel" name="calabel_6">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>80</y>
+       <width>161</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Not Parked</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::PlainText</enum>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="foreground">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+     <property name="background">
+      <color alpha="1">
+       <red>150</red>
+       <green>150</green>
+       <blue>154</blue>
+      </color>
+     </property>
+     <property name="borderWidth">
+      <number>0</number>
+     </property>
+     <property name="colorMode">
+      <enum>caLabel::Static</enum>
+     </property>
+    </widget>
+    <widget class="caLabel" name="calabel_7">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>120</y>
+       <width>161</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Not Datumed</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::PlainText</enum>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="foreground">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+     <property name="background">
+      <color alpha="1">
+       <red>150</red>
+       <green>150</green>
+       <blue>154</blue>
+      </color>
+     </property>
+     <property name="borderWidth">
+      <number>0</number>
+     </property>
+     <property name="colorMode">
+      <enum>caLabel::Static</enum>
+     </property>
+    </widget>
+    <widget class="caLabel" name="calabel_8">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>160</y>
+       <width>161</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Initialized</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::PlainText</enum>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="foreground">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+     <property name="background">
+      <color alpha="1">
+       <red>150</red>
+       <green>150</green>
+       <blue>154</blue>
+      </color>
+     </property>
+     <property name="borderWidth">
+      <number>0</number>
+     </property>
+     <property name="colorMode">
+      <enum>caLabel::Static</enum>
+     </property>
+    </widget>
+    <widget class="caLabel" name="calabel_9">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>200</y>
+       <width>161</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Not in Position</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::PlainText</enum>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="foreground">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+     <property name="background">
+      <color alpha="1">
+       <red>150</red>
+       <green>150</green>
+       <blue>154</blue>
+      </color>
+     </property>
+     <property name="borderWidth">
+      <number>0</number>
+     </property>
+     <property name="colorMode">
+      <enum>caLabel::Static</enum>
+     </property>
+    </widget>
+    <widget class="caLabel" name="calabel_10">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>240</y>
+       <width>161</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>IDLE</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::PlainText</enum>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="foreground">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+     <property name="background">
+      <color alpha="1">
+       <red>150</red>
+       <green>150</green>
+       <blue>154</blue>
+      </color>
+     </property>
+     <property name="borderWidth">
+      <number>0</number>
+     </property>
+     <property name="colorMode">
+      <enum>caLabel::Static</enum>
+     </property>
+    </widget>
+    <widget class="caLabel" name="calabel_11">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>280</y>
+       <width>161</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Debug: None</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::PlainText</enum>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="foreground">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+     <property name="background">
+      <color alpha="1">
+       <red>150</red>
+       <green>150</green>
+       <blue>154</blue>
+      </color>
+     </property>
+     <property name="borderWidth">
+      <number>0</number>
+     </property>
+     <property name="colorMode">
+      <enum>caLabel::Static</enum>
+     </property>
+    </widget>
+    <widget class="caLabel" name="calabel_12">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>320</y>
+       <width>161</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Simulation</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::PlainText</enum>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="foreground">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+     <property name="background">
+      <color alpha="1">
+       <red>150</red>
+       <green>150</green>
+       <blue>154</blue>
+      </color>
+     </property>
+     <property name="borderWidth">
+      <number>0</number>
+     </property>
+     <property name="colorMode">
+      <enum>caLabel::Static</enum>
+     </property>
+    </widget>
+   </widget>
+   <zorder>caframe</zorder>
+   <zorder>calabel</zorder>
+   <zorder>calineedit</zorder>
+   <zorder>calineedit_2</zorder>
+   <zorder>carelateddisplay</zorder>
+   <zorder>carelateddisplay_2</zorder>
+   <zorder>calineedit_3</zorder>
+   <zorder>cacamera</zorder>
+   <zorder>carelateddisplay_3</zorder>
+   <zorder>carelateddisplay_4</zorder>
+   <zorder>carelateddisplay_5</zorder>
+   <zorder>carelateddisplay_6</zorder>
+   <zorder>carelateddisplay_7</zorder>
+   <zorder>carelateddisplay_9</zorder>
+   <zorder>caframe_4</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>868</width>
-     <height>24</height>
+     <width>1000</width>
+     <height>22</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">
@@ -237,13 +974,18 @@
    <addaction name="menuFile"/>
    <addaction name="menuHelp"/>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <customwidgets>
   <customwidget>
    <class>caRelatedDisplay</class>
    <extends>QWidget</extends>
    <header>caRelatedDisplay</header>
+  </customwidget>
+  <customwidget>
+   <class>caFrame</class>
+   <extends>QFrame</extends>
+   <header>caFrame</header>
+   <container>1</container>
   </customwidget>
   <customwidget>
    <class>caLabel</class>
@@ -263,6 +1005,7 @@
  </customwidgets>
  <resources>
   <include location="../../../../usr/local/epics/caqtdm/caQtDM_QtControls/qtcontrols.qrc"/>
+  <include location="gnao.qrc"/>
  </resources>
  <connections/>
 </ui>

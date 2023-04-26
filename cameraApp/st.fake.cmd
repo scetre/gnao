@@ -7,7 +7,7 @@ ADAravisApp_registerRecordDeviceDriver(pdbbase)
 
 epicsEnvSet("CAMERA_NAME", "Aravis-Fake-GV01")
 # Prefix for all records
-epicsEnvSet("PREFIX", "GNAO:NGS:SLOW_WFS:")
+epicsEnvSet("PREFIX", "GNAO:LGS:WFS:")
 
 # The port name for the detector
 epicsEnvSet("PORT",   "ARV1")

@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 lgsFocus = epics.Motor('GNAO:CALIB:LGS:FOCUS')
 shutter = epics.Motor('GNAO:SHUTTER:INPUT')
-cameraIm = epics.PV("GNAO:NGS:SLOW_WFS:image1:ArrayData")
+cameraIm = epics.PV("GNAO:LGS:WFS:image1:ArrayData")
 
 
 # Retreive position
@@ -24,4 +24,4 @@ im=cameraIm.get()
 
 plt.ion()
 plt.figure()
-plt.imshow(im.reshape(512,512))
+plt.imshow(im.reshape(240,240))

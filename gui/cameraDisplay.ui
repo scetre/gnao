@@ -24,13 +24,13 @@
      </rect>
     </property>
     <property name="channelData" stdset="0">
-     <string notr="true">GNAO:NGS:SLOW_WFS:image1:ArrayData</string>
+     <string notr="true">GNAO:LGS:WFS:image1:ArrayData</string>
     </property>
     <property name="channelWidth" stdset="0">
-     <string notr="true">GNAO:NGS:SLOW_WFS:CAM:ArraySizeX_RBV</string>
+     <string notr="true">GNAO:LGS:WFS:CAM:ArraySizeX_RBV</string>
     </property>
     <property name="channelHeight" stdset="0">
-     <string notr="true">GNAO:NGS:SLOW_WFS:CAM:ArraySizeY_RBV</string>
+     <string notr="true">GNAO:LGS:WFS:CAM:ArraySizeY_RBV</string>
     </property>
    </widget>
    <widget class="caRelatedDisplay" name="carelateddisplay_2">
@@ -59,7 +59,7 @@
      <string>ADBase</string>
     </property>
     <property name="args">
-     <string>P=GNAO:NGS:SLOW_WFS:,R=CAM:</string>
+     <string>P=GNAO:LGS:WFS:,R=CAM:</string>
     </property>
     <property name="removeParent" stdset="0">
      <string>false</string>
