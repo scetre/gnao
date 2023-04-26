@@ -1,5 +1,9 @@
 <RCC>
   <qresource prefix="Images">
+    <file>images/AlpaoLogo.png</file>
+    <file>images/AstralisLogo.png</file>
+    <file>images/LAMLogo.png</file>
+    <file>images/OneraLogo.png</file>
     <file>images/guiMOCKUP2.png</file>
     <file>images/guiMOCKUP.png</file>
   </qresource>

@@ -936,6 +936,70 @@
      </property>
     </widget>
    </widget>
+   <widget class="caLabel" name="calabel_3">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>80</y>
+      <width>151</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../../../../usr/local/epics/caqtdm/caQtDM_QtControls/qtcontrols.qrc">:/pixmaps/AlpaoLogo.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="caLabel" name="calabel_13">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>160</y>
+      <width>151</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../../../../usr/local/epics/caqtdm/caQtDM_QtControls/qtcontrols.qrc">:/pixmaps/LAMLogo.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="caLabel" name="calabel_14">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>0</y>
+      <width>151</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../../../../usr/local/epics/caqtdm/caQtDM_QtControls/qtcontrols.qrc">:/pixmaps/AstralisLogo.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="caLabel" name="calabel_15">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>240</y>
+      <width>151</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../../../../usr/local/epics/caqtdm/caQtDM_QtControls/qtcontrols.qrc">:/pixmaps/OneraLogo.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
    <zorder>caframe</zorder>
    <zorder>calabel</zorder>
    <zorder>calineedit</zorder>
@@ -951,6 +1015,10 @@
    <zorder>carelateddisplay_7</zorder>
    <zorder>carelateddisplay_9</zorder>
    <zorder>caframe_4</zorder>
+   <zorder>calabel_13</zorder>
+   <zorder>calabel_14</zorder>
+   <zorder>calabel_15</zorder>
+   <zorder>calabel_3</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
